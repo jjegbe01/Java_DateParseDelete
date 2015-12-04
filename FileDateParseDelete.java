@@ -1,4 +1,4 @@
-package com.ups.ttg.brokerage.tradeability.utilities;
+package <PACKAGE DIRECTORY GOES HERE>;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -51,7 +51,7 @@ public class FileDateParseDelete {
 					try
 					{
 						//TODO: Needs to be made into a relative file path
-						input = new FileInputStream("D:\\UPSData\\TradeAbility\\trunk\\tradeability-utils\\src\\main\\resources\\filedateparsedelete.properties");
+						input = new FileInputStream("filedateparsedelete.properties"); /*Change as needed to target your proerties file*/
 						prop.load(input);
 						validRenameToTarget = prop.getProperty("deleter.valid.renameto.target");
 						invalidRenameToTarget = prop.getProperty("deleter.invalid.renameto.target");
