@@ -58,7 +58,8 @@ public class DirectoryCleanup{
 					try 
 					{
 						//TODO: Needs to be made into a relative file path
-						input = new FileInputStream("D:\\TADev\\Development\\tradeability-parent\\tradeability-core\\src\\main\\resources\\directorycleanup.properties");
+						//Change this before implementation
+						input = new FileInputStream("D:\\Properties\\File\\Goes\\Here\\directorycleanup.properties");
 						prop.load(input);
 						validRenameToTarget = prop.getProperty("deleter.valid.renameto.target");
 						invalidRenameToTarget = prop.getProperty("deleter.invalid.renameto.target");
@@ -148,7 +149,7 @@ public class DirectoryCleanup{
 					try 
 					{
 						//TODO: Needs to be made into a relative file path
-						input = new FileInputStream("D:\\TADev\\Development\\tradeability-parent\\tradeability-core\\src\\main\\resources\\directorycleanup.properties");
+						input = new FileInputStream("D:\\Properties\\File\\Goes\\Here\\directorycleanup.properties");
 						prop.load(input);
 						validRenameToTarget = prop.getProperty("deleter.valid.renameto.target");
 						invalidRenameToTarget = prop.getProperty("deleter.invalid.renameto.target");
