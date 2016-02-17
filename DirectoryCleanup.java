@@ -33,7 +33,10 @@ public class DirectoryCleanup{
 		cal.add(Calendar.DATE, -retentionLength);
 		limitDate = cal.getTime();
 	}
-	
+	private void resetDate(int retentionLength){
+		cal.add(Calendar.DATE, retentionLength);
+		limitDate = cal.getTime();
+	}
 	public boolean PrefixCheck (String fileName, String prefix) throws ParseException
 	{
 		boolean prefixStatus = fileName.contains(prefix);
@@ -151,6 +154,7 @@ public class DirectoryCleanup{
 		{
 		System.out.println("Specified directory does not exist: " + filepath.toString());	
 		}
+		resetDate(Integer.parseInt(retentionLength));
 		return filesToDelete;
 	}
 	
